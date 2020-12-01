@@ -172,8 +172,6 @@ int dropLetters(char* word){
             }
         }
 
-
-
     }
     return cnt;
 
@@ -349,15 +347,11 @@ int main()
 
         }
 
-
-
         static double data [BUFFER_LEN];
         SF_INFO		sfinfo1, sfinfo2 ;
         SNDFILE	*infile, *outfile ;
 
-
         const char	*outfilename;
-
 
         memset (&sfinfo1, 0, sizeof (sfinfo1)) ;
         memset (&sfinfo2, 0, sizeof (sfinfo2)) ;
@@ -369,7 +363,6 @@ int main()
         sfinfo1.format		= SF_FORMAT_RAW | SF_FORMAT_PCM_16;
         sfinfo1.channels	= 1 ;
 
-
         if (! (infile = sf_open (rawfilename, SFM_READ, &sfinfo1)))
         {	printf ("Error : could not open file : %s\n", rawfilename) ;
             puts (sf_strerror (NULL)) ;
@@ -378,8 +371,6 @@ int main()
 
         double limit, tail;
         double readcount;
-
-
         /*
                     SAMPLE_COUNT	(SAMPLE_RATE * duration)
                     sveukupno ima => 4.58 s * 16000 = 73 280 sampleova
@@ -415,8 +406,6 @@ int main()
                     strcat(tmp, suf);
                 } else {
                     strcpy(tmp, collection[i].word);
-
-
                 }
 
                 //uredjivanje direktorija i imena datoteke
@@ -427,8 +416,6 @@ int main()
                 outfilename= strcat(base, directory);
                 outfilename = strcat(base, tmp);
                 strncat(outfilename, ".wav", 4);
-
-
 
                 //podesavanje file cursora na odredjeni segment
                 memset (&data, 0, sizeof (data)) ;
@@ -466,14 +453,9 @@ int main()
                         break;
 
                     }
-
                 }
-
-
-
         }
-
-
+		
         sf_close(outfile);
         sf_close (infile) ;
 
