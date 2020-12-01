@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1567958642 source:c:\users\nikolas\desktop\projekt_prog1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<sndfile.h>
+	<string.h>
+	<io.h>
+	<sys/types.h>
+	<dirent.h>
+	<math.h>
+	<dirent.h>
+	<errno.h>
+
+1491155930 c:\program files (x86)\mega-nerd\libsndfile\include\sndfile.h
+	<stdio.h>
+	<stdint.h>
+	<sys/types.h>
+
